@@ -1,0 +1,14 @@
+[global]
+ApplicationName=parks8
+AwsCredentialFile=c:/Users/inception\.elasticbeanstalk\aws_credential_file
+DevToolsEndpoint=git.elasticbeanstalk.us-west-1.amazonaws.com
+EnvironmentName=parks8-env
+EnvironmentTier=WebServer::Standard::1.0
+EnvironmentType=LoadBalanced
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=c:\Users\inception\Desktop\parks8\.elasticbeanstalk\optionsettings.parks8-env
+RdsEnabled=No
+Region=us-west-1
+ServiceEndpoint=https://elasticbeanstalk.us-west-1.amazonaws.com
+SolutionStack=64bit Amazon Linux 2014.03 v1.0.3 running Python 2.7
+

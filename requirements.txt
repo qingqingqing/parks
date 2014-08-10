@@ -1,0 +1,7 @@
+MySQL-python==1.2.3
+beautifulsoup4==4.3.0
+flask==0.10.1
+nltk==2.0.4
+PyYAML==3.11
+ 
+ 

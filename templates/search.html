@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block css %}
+.popover {
+  max-width: 552px;
+  font-size: 14px;
+} 
+{% endblock %}
+
+
+
+
+{% block body %}
+
+<div class="row">
+  <div class="span10 offset1">
+    <div class="well">
+
+      {% if restaurant_id %}
+
+      <center>
+        <h1>Restaurant: {{ restaurant_nm }}</h1>
+        <h6>Address: {{restaurant_address}}</h6>
+        <h6>Phone: {{restaurant_phone}}</h6>
+        <h6>Number of Reviews:{{total_num_reviews}}</h6><br/>
+      </center>
+      <div class="row-fluid">
+        <div class="span3">
+          {{ thumbnail_url_html|safe }}
+        </div>
+        <div class="span9">
+          {% for t in top_quotes %}
+          {{ t |safe }}<br/><br/>
+          {% endfor %}
+        </div>
+      </div>
+
+{% else %}
+  <div class="alert alert-error">"{restaurant_nm}}" not found in database!</div>
+{% endif %}
+
+  </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+{% block script %}
+
+  <script>
+
+<!-- This black magic came from https://drupal.org/node/1437850 -->
+!function( $ ){
+  $(function () { 
+      $('a[rel=popover]').popover(
+        {placement:'bottom', 
+         trigger:'hover focus',
+         html:'true',
+        }); 
+    });
+}( window.jQuery )
+
+  </script>
+
+
+{% endblock %}
+
+

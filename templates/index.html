@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+  <br>
+
+  <div class="row">
+    <div class="span10 offset1">
+  <div class="well">
+
+    <center>
+      <h1>Digest Reviews of YellowStone National Park!</h1><br></br>
+
+      <a href = 'http://www.tripadvisor.com/Restaurants-g60999-Yellowstone_National_Park_Wyoming.html'>All Restaurants at YellowStone</a>
+      <br></br>
+      <ol>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d517927-Reviews-Roosevelt_Lodge-Yellowstone_National_Park_Wyoming.html'> Roosevelt Lodge</a></li>
+     <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d519501-Reviews-Lake_Yellowstone_Hotel-Yellowstone_National_Park_Wyoming.html'> Lake Yellowstone Hotel</a></li>
+     <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d519502-Reviews-Mammoth_Hot_Springs_Dining_Room-Yellowstone_National_Park_Wyoming.html'> Mammoth Springs Dinning Room</a></li>
+     <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d519503-Reviews-Obsidian_Dining_Room-Yellowstone_National_Park_Wyoming.html'> Obsidian Dininig Room</a></li>
+     <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d1524609-Reviews-Old_Faithful_Basin_Store-Yellowstone_National_Park_Wyoming.html'> Old Faithful Basin Store</a></li>
+     <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d1818651-Reviews-Old_Faithful_Lodge_Cafeteria_Bakery-Yellowstone_National_Park_Wyoming.html'> Old Faithful Lodge Cageeria and Bakery</a></li>
+     <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d518895-Reviews-Old_Faithful_Inn_Restaurant-Yellowstone_National_Park_Wyoming.html'> Old Faithful Inn Restaurant</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d532541-Reviews-Lake_Lodge_Cafeteria-Yellowstone_National_Park_Wyoming.html'> Lake Lodge Cafeteria</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d1520905-Reviews-Lower_Hamilton_Store-Yellowstone_National_Park_Wyoming.html'> Lower Hamilton Store</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d1181268-Reviews-Old_Faithful_Lodge_Cabins-Yellowstone_National_Park_Wyoming.html'> Old Faithful Lodge Cabins</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d519500-Reviews-Grant_Village_Dining_Room-Yellowstone_National_Park_Wyoming.html'> Grant Village Dining Room</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d4985908-Reviews-Bear_Pit_Lounge-Yellowstone_National_Park_Wyoming.html'> Bear Pit Lounge</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d4736610-Reviews-Old_Faithful_Snow_Lodge_Restaurant-Yellowstone_National_Park_Wyoming.html'> Old Faithful Snow Lodge Restaurant</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d2199849-Reviews-Canyon_Lodge_Dining_Room-Yellowstone_National_Park_Wyoming.html'> Canyon Lodge Dining Room</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d4929015-Reviews-Canyon_Fountain_and_Grill-Yellowstone_National_Park_Wyoming.html'> Canyon Fountain and Grill</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d532460-Reviews-Terrace_Grill-Yellowstone_National_Park_Wyoming.html'> Terrace Grill</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d519499-Reviews-Canyon_Lodge_Cafeteria-Yellowstone_National_Park_Wyoming.html'> Canyon Lodge Cafeteria</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d532459-Reviews-Geyser_Grill_at_Old_Faithful_Snow_Lodge-Yellowstone_National_Park_Wyoming.html'> Geyser Grill at Old Faithful Snow Lodge</a>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d6387346-Reviews-Mammoth_General_Store-Yellowstone_National_Park_Wyoming.html'> Mammonth General Store</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d1077889-Reviews-Lake_Hotel_Deli-Yellowstone_National_Park_Wyoming.html'> Lake Hotel Deli</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d3412330-Reviews-Mammoth_Terrace_Grill-Yellowstone_National_Park_Wyoming.html'> Mammoth Terrace Grill</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d3337448-Reviews-Grant_Village_Lakehouse_Restaurant-Yellowstone_National_Park_Wyoming.html'> Grant Village Lakehouse Restaurant</a></li>
+      <li><a href = 'http://www.tripadvisor.com/Restaurant_Review-g60999-d532458-Reviews-Pony_Express_Snack_Shop-Yellowstone_National_Park_Wyoming.html'> Pony Express Sanck Shop</a></li>
+
+
+
+
+
+
+
+
+  
+    </center>
+
+<hr>
+
+
+
+
+<style> 
+  img.a { max-width:590px; 
+        width:expression_r(this.width>590?"590px":this.width); 
+        height:20px;
+       }
+</style>
+
+
+
+
+        <center>
+          <h1>Click a Restaurant below</h1></center>
+         <center>
+          <h3>(will give unbiased top quotes)</h3><br></br></center>
+         
+
+          {% for t in all_imgs %}
+                    
+                 <div class="row-fluid" >
+                 
+                     <div class="span6 offset3"  style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                          {{ t|safe }}
+                      </div> 
+                      
+                    
+                 </div>       
+          {% endfor %}
+                        
+          <br/><br/>
+
+            </div>
+       
+      </div>
+
+<br>
+
+{% endblock %}

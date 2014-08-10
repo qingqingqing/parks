@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="row">
+    <div class="span10 offset1">
+<div class="well">
+
+
+   <center>
+    <h1>Word Cloud of Reviews</h1><br>
+ 
+    
+   </center>  
+  
+   <p> There are thousands of reviews about 85 attractions of
+       <a href='http://www.tripadvisor.com/Tourism-g60999-Yellowstone_National_Park_Wyoming-Vacations.html'>YellowStone</a> in tripadvisor.com.
+       It takes too much time to read all of them. We need an easier way to digest them. 
+ </p>
+<p>     
+Four word clouds below present the most frequent words what people are talking about, 
+     such as Falls, Geyser, Canyon, Bison, Wildlife, Spring, Walk, Beautiful and so on.
+These frequent words together can sketch YellowStone National Park very well. 
+  </p>
+<p> 
+        
+     The sketch is useful for trip planning, giving the most informative words of YellowStone. 
+    And it is very convenient to use, viewing one image, compared to google or read all thousands of reviews.    
+ 
+   </p>  
+   <br><br>
+
+
+
+
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseOne">
+          ALL WORDS
+        </a>
+      </h4>
+    </div>
+
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+            
+        <img class="img-polaroid" src="{{url_for('static', filename = 'tag_clouds/yellowstone_all.png')}}"> 
+    </div>
+  </div>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseTwo">
+          NOUN
+        </a>
+      </h4>
+    </div>
+
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+    <img class="img-polaroid" src="{{url_for('static', filename = 'tag_clouds/yellowstone_noun.png')}}"> 
+    </div>
+  </div>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseThree">
+          VERB
+        </a>
+      </h4>
+    </div>
+
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+           <img class="img-polaroid" src="{{url_for('static', filename = 'tag_clouds/yellowstone_verb.png')}}">
+  </div>
+</div>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseFour">
+          ADJECTIVE
+        </a>
+      </h4>
+    </div>
+
+     <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body">
+    <img class="img-polaroid" src="{{url_for('static', filename = 'tag_clouds/yellowstone_adj.png')}}">
+    </div>
+  </div>
+
+
+
+
+  
+   
+ 
+</div>
+</div>
+</div>
+
+{% endblock %}
